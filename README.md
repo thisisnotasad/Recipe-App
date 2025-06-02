@@ -1,7 +1,7 @@
-# Recipe App: A Web Application
+# Recipe App: Find and Explore Recipes
 
-![Project Screenshot](/screenshot.png) <!-- Add your screenshot path here -->
-
+![alt text](/images/image.png)
+![alt text](/images/image-1.png)
 A responsive web application for finding and exploring recipes with clean UI and smooth animations.
 
 ## Features

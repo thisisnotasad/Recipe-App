@@ -81,7 +81,7 @@ const displayRecipes = (recipes) => {
   recipeContainer.innerHTML = "";
 
   if (!recipes || recipes.length === 0) {
-    recipeContainer.innerHTML = "<p>No recipes found.</p>";
+    recipeContainer.innerHTML = "<h3>No recipes found.</h3>";
     return;
   }
 
