@@ -110,19 +110,22 @@ body {
   position: fixed;
   top: 50%;
   left: 50%;
-  width: 40%;
-  height: 60%;
-  font-size: clamp(1rem, 2.5vw, 2rem);
+  width: 90%; 
+  max-width: 500px; 
+  height: 80vh; 
+  max-height: 600px; 
+  font-size: clamp(1rem, 3vw, 1.5rem); 
   transform: translate(-50%, -50%);
   -webkit-transform: translate(-50%, -50%);
   overflow: hidden;
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(11, 61, 70, 0.5);
-  transition: all 0.9s ease;
+  transition: all 0.3s ease; 
   background: #c9f2e5;
-  padding: 1rem;
+  padding: 1.5rem;
   overflow-y: auto;
   overflow-x: hidden;
+  z-index: 1000; 
 }
 
 .instructions {
@@ -296,3 +299,21 @@ li {
     background-color: darkcyan;
   }
 }
+
+
+@media (max-width: 768px) {
+  .hover-card {
+    width: 95%; 
+    height: 85vh; 
+    padding: 1rem; 
+    font-size: 1rem; 
+  }
+}
+
+@media (max-width: 480px) {
+  .hover-card {
+    height: 90vh; 
+    border-radius: 0;
+  }
+}
+
