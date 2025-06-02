@@ -86,7 +86,6 @@ const displayRecipes = (recipes) => {
   }
 
   recipes.forEach((recipe) => {
-    console.log(typeof recipe);
     const {
       strMeal = "Unknown Meal",
       strMealThumb = "",
@@ -134,16 +133,13 @@ const fetchRecipes = async (searchTerm) => {
       `https://www.themealdb.com/api/json/v1/1/search.php?s=${searchTerm}`
     );
     const response = await data.json();
-    console.log(response.meals);
     if (response.meals) {
       displayRecipes(response.meals);
     } else {
-      console.log("No recipes found");
       recipeContainer.innerHTML = "<h3>No recipes found!</h3>";
     }
   } catch {
     loader.style.display = "none";
-    console.error("Error fetching recipes");
     recipeContainer.innerHTML = "<h3>No recipes found!</h3>";
   } finally {
     loader.style.display = "none";
@@ -157,7 +153,6 @@ const handleSearch = (e) => {
     alert("Please enter a search term.");
     return;
   } else {
-    console.log(searchTerm);
     fetchRecipes(searchTerm);
   }
 };
