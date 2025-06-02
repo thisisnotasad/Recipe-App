@@ -3,9 +3,9 @@ const inputBox = document.querySelector(".search-input");
 const recipeContainer = document.querySelector(".recipe-container");
 const loader = document.querySelector(".loader");
 const hoverCard = document.querySelector(".hover-card");
-const closeBtn = document.querySelector(".close-btn");
 
 const API_KEY = "www.themealdb.com/api/json/v1/1/search.php?s=Arrabiata";
+
 
 const findIngrediants = (recipe) => {
   const ingredientList = [];
@@ -170,8 +170,5 @@ const showHoverCard = (recipe) => {
   }
 };
 
-closeBtn.addEventListener("click", () => {
-  hoverCard.style.display = "none";
-});
 
 btn.addEventListener("click", handleSearch);
