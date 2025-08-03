@@ -5,9 +5,9 @@
 A responsive web application for finding and exploring recipes with clean UI and smooth animations.
 
 ## Live Demo
-```
-https://thisisnotasad.github.io/Recipe-App/
-```
+
+[https://thisisnotasad.github.io/Recipe-App/](https://thisisnotasad.github.io/Recipe-App/)
+
 
 ## Features
 
